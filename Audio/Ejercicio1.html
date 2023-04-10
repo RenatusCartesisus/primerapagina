@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- El objetivo de la etiqueta de <audio> es permitir la carga y ejecucion de archivos de audio sin requerir un plug-in de Flash, Silverlight o Java -->
+
+        <!-- 
+            Ejemplo: 
+            <audio src="sonido.ogg" autoplay controls loop></audio> 
+        -->
+
+        <!-- Propiedades: 
+
+            src = la URL donde se encuentra el audio. -> source
+
+            autoplay = el audio se reproduce automaticamente luego de cargarse la pagina, sin requerir intervencion del visitante
+
+            loop = el archivo se ejecuta una y otra vez
+
+            controls = indica que se deben mostrar la interface visual del control en la pagina (control para desplazar, arrancar el audio, detenerlo, etc)
+
+            autobuffer = Indica que el archivo debe primero descargarse en el cliente antes de ejecutarse
+            
+            -> source reproducira un archivo de audio, y en caso de no existir, pasara al siguiente
+        -->
+
+        <audio controls>
+            <source src="http://www.tutorialesprogramacionya.com/audios/gallo.ogg"> 
+            <source src="http://www.tutorialesprogramacionya.com/audios/gallo.mp3"> 
+            <source src="http://www.tutorialesprogramacionya.com/audios/gallo.wav">
+        </audio>
+
+        <!-- En caso de necesitar un unico archivo de audio -->
+        <audio src="dog.mp3" controls></audio>
+    
+</body>
+</html>

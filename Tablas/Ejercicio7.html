@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <!-- En algunas cosas se necesita que una celda ocupe el lugar de dos o mas celdas en forma horizontal o vertical, para estos casos se usa td o th, que disponen de propiedades "rowspan" y "colspan" 
+    
+        A estas propiedades se les asigna un valor entero a partir de 2
+    -->
+
+    <table style="border: 2px double #000;">
+
+        <tr>
+            <td class="header" rowspan="4">Recursos</td>
+            <td  class="header" colspan="4">Facturacion de los ultimos tres meses</td>
+        </tr>
+        <tr>
+            <td>Discos Duros</td>
+            <td>23000</td>
+            <td>27200</td>
+            <td>26000</td>
+        </tr>
+        <tr>
+            <td>CPU</td>
+            <td>73000</td>
+            <td>67300</td>
+            <td>51000</td>
+        </tr>
+        <tr>
+            <td>Monitores</td>
+            <td>53000</td>
+            <td>72000</td>
+            <td>88000</td>
+        </tr>
+        
+    </table>
+    
+    <style>
+        td{
+            border: 2px double #000;
+        }
+        .header{
+            font-weight: bold;
+        }
+    </style>
+
+</body>
+</html>

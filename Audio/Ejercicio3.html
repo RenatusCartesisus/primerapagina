@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+
+    <!-- 
+        La etiqueta <video> permite reproducir un video sin necesidad de plugins
+
+        <video width="640" height="360"
+        src="http://videos.mozilla.org/firefox/3.5/overview/overview.ogv" 
+        controls>
+        Este navegador no permite tag video 
+        </video>
+
+            src = la URL donde se encuentra el audio. -> source
+
+            autoplay = el audio se reproduce automaticamente luego de cargarse la pagina, sin requerir intervencion del visitante
+
+            controls = indica que se deben mostrar la interface visual del control en la pagina (control para desplazar, arrancar el audio, detenerlo, etc)
+            
+            -> source reproducira un archivo de audio, y en caso de no existir, pasara al siguiente
+
+            width = ancho en pixeles
+        
+            height = alto en pixeles
+     -->
+
+        <video width="640" height="360" controls autoplay src="http://www.tutorialesprogramacionya.com/videos/video1.mp4"></video>
+
+    
+</body>
+</html>

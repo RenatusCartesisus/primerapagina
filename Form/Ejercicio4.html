@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+
+    <form action="">
+        Ingrese su mail: 
+        <input type="text" name="nombre" size="50"><br>
+        Ingrese su clave: 
+        <input type="password" name="pass" id="pass" size="12"> 
+        <br>
+        Repita el ingreso de su clave: 
+        <input type="password" name="pass2" id="pass2" size="12"> 
+        <br>
+        <input type="submit" value="enviar" id="enviar"> 
+        <input type="reset" value="borrar"> 
+        </form>
+
+        <script>
+        
+        document.getElementById('enviar').addEventListener("click", (e) =>{
+
+            let pass = document.getElementById('pass').value;
+            let pass2 = document.getElementById('pass2').value;
+
+            if(pass!=pass2){
+                e.preventDefault();
+                alert('Las contraseñas no coinciden');
+            }
+            else{
+                alert('Bienvenido!');
+            }
+
+
+        });
+// r6^c1VCkwxSboceTYHAx
+            
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <!-- 
+        Una tabla en HTML empiza marcada por las etiquetas "table". Entre esas dos etiquetas definiremos la celdas, las columnas y sus caracteristicas. 
+        Atributos:
+        - background = poner una imagen de fondo.
+        -border = parametro numerico que indica el grosor del borde
+        -bordecolor = le da color al borde
+        -width = indica la anchura de la tabla. La podemos colocar con pixeles o con porcentaje
+        -cellspacing = define el espacio entre celdas
+        -cellpadding = marca el espacio que el texto se aleja de las celdas
+
+        <tr> nos indica las filas de nuestra tabla
+
+        Para alinear el contenido en estas celdas usamos "valign" para alineacion vertical, con parametros como "top", "middle" o "bottom".
+
+        Para alinear horizontalmente usamos "align", con parametros como "center", "left", "right" o "justify".
+     -->
+    <!-- <table width="100%" border="1" bordercolor="#00f" cellspacing="10" cellpadding="10"></table> -->
+
+    <table>
+        <tr>
+            <td>Costo</td>
+            <td>Produccion</td>
+            <td>Diseño y Fotografía</td>
+            <td>Docencia y Educación</td>
+        </tr>
+        <tr>
+            <td>Microfonía</td>
+            <td>Hardware</td>
+            <td>Software</td>
+            <td>Backline</td>
+        </tr>
+        <tr>
+            <td>Logotipos</td>
+            <td>Cover Art</td>
+            <td>Photoshop</td>
+            <td>Diseño Acústico</td>
+        </tr>
+    </table>
+
+    <style>
+        td{
+            border: 2px solid #000;
+        }
+        .header{
+            font-weight: bold;
+        }
+    </style>
+
+</body>
+</html>
